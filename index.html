@@ -228,7 +228,7 @@
                                 <p class="category"></p>
                             </div>
                             <div class="content">
-                                <div id="9container"></div>
+                                <div id="11container"></div>
                             </div>
                         </div>
                     </div>
@@ -687,6 +687,45 @@
     series: [ {
         name: 'No. of Views',
         data: [3, 4, 4, 2, 5]
+    }]
+});
+    </script>
+
+
+	<script type="text/javascript">
+        Highcharts.chart('11container', {
+    chart: {
+        type: 'line'
+    },
+    title: {
+        text: 'View'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['13:00','14:00','15:00','16:00','17:00','18:00','19:00','20:00','21:00','22:00','23:00','00:00']
+    },
+    yAxis: {
+        title: {
+            text: 'Count'
+        }
+    },
+    plotOptions: {
+        line: {
+            dataLabels: {
+                enabled: true
+            },
+            enableMouseTracking: false
+        }
+    },
+    series: [{
+        name: 'Not Viewed',
+        data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+    },
+    {
+        name: 'Viewed',
+        data: [7.0, 6.9, 9.5, 14.5, 16, 17.5, 18.2, 17.5, 20.3, 18.3, 13.9, 9.6]
     }]
 });
     </script>
